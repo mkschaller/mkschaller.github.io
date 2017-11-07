@@ -1,3 +1,6 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i|Poppins:300,400,700');
+
 // Variables
 
 $nav-bkg: #eee;
@@ -6,7 +9,12 @@ $button-bkg: teal;
 $shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 $shadow-md: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 $shadow-lg: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+$open-sans: 'Open Sans', sans-serif;
+$poppins: 'Poppins', sans-serif;
 
+*{
+	font-family: $open-sans;
+}
 .container{
 	margin: 1em auto;
 }
@@ -17,6 +25,8 @@ $shadow-lg: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 	border-radius: 0;
 	box-shadow: $shadow-sm;
 }
+
+/* Typography --------------------------------------------------------------- */
 h1.text-light{
 	text-shadow: $shadow-md;
 }
@@ -30,6 +40,7 @@ footer{
 	width: 100%;
 }
 .btn-primary{
+	height: 45px;
 	background: $button-bkg;
 	border: 1px solid $button-bkg;
 }
