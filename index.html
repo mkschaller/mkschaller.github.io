@@ -10,6 +10,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script>
+			$(document).ready(function(){
+				var date = new Date();
+				var year = date.getFullYear();
+				$("#year").html(year)
+			});
+  </script>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm bg-faded navbar-light fixed-top"> <!-- bg-light instead? -->
@@ -19,13 +26,13 @@
 	  </button>
 	  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
 		<ul class="navbar-nav nav-justified">
-		  <li class="nav-item">
+		  <li class="nav-item m-2">
 			<a class="nav-link" href="resume.html">Resume</a>
 		  </li>
-		  <li class="nav-item">
+		  <li class="nav-item m-2">
 			<a class="nav-link" href="portfolio.html">Portfolio</a>
 		  </li>
-		  <li class="nav-item">
+		  <li class="nav-item m-2">
 			<a class="nav-link" href="contact.html">Contact</a>
 		  </li>    
 		</ul>
@@ -36,7 +43,7 @@
  	<header class="jumbotron masthead" style="padding-top: 125px;">
  		<h1 class="display-4 text-center text-light">Web and graphic designer.</h1>
  	</header>
-    <main class="container">
+    <main class="container m-5 mx-auto">
        	<div class="row">
        		<div class="col-sm-8">
        			<h1>Who is McKenna?</h1>
@@ -57,13 +64,17 @@
 			</div>
 			<div class="col-md-4 p-1">
 				<h4>Visit me online!</h4>
-				<a href="https://github.com/mkschaller" class="btn btn-info m-1" role="button" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-				<a href="https://www.linkedin.com/in/mckenna-schaller/" class="btn btn-info m-1" role="button"  target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
-				<a href="mailto:mckennakschaller@gmail.com" class="btn btn-info m-1" role="button"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+				<a href="https://github.com/mkschaller" class="btn btn-primary m-1" role="button" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+				<a href="https://www.linkedin.com/in/mckenna-schaller/" class="btn btn-primary m-1" role="button"  target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
+				<a href="mailto:mckennakschaller@gmail.com" class="btn btn-primary m-1" role="button"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
 
 			</div>
   		</div>
-   		<p class="text-center">&copy; 2017 McKenna Schaller</p>
+   		
+   		<div class="text-center">
+   			<img src="http://via.placeholder.com/35x35" alt="PC" class="m-1">
+   			<p class="m-2">&copy; <span id="year"></span> McKenna Schaller</p>
+   		</div>
     </footer>
 </body>
 </html>
