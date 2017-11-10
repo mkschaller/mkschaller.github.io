@@ -29,10 +29,6 @@ nav img {
   width: 225px;
   height: auto; }
 
-@media only screen and (max-width: 576px) {
-  nav img {
-    width: 200px;
-    height: auto; } }
 /* Footer --------------------------------------------------------------- */
 footer {
   background: #eeeeee;
