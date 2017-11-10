@@ -1,5 +1,5 @@
 /* Imports --------------------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i|Poppins:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i|Poppins:300,400,600');
 
 /* Variables --------------------------------------------------------------- */
 $ltgray: rgb(238,238,238); // aka #eee
@@ -43,6 +43,18 @@ $poppins: 'Poppins', sans-serif;
 
 h1.text-light{
 	text-shadow: $shadow-md;
+	font-weight: 600;
+}
+
+h1{
+	font-family: $poppins;
+	color: $blue;
+	font-weight: 600;
+}
+h2{
+	font-family: $poppins;
+	color: $teal;
+	font-weight: 600;
 }
 /* Navigation --------------------------------------------------------------- */
 
@@ -53,6 +65,13 @@ h1.text-light{
 nav img{
 	width: 200px;
 	height: auto;
+}
+nav li a{
+	font-weight: 600;
+	color: $teal;
+}
+nav li a:hover, nav li a.active{
+	color: $blue;
 }
 /* Footer --------------------------------------------------------------- */
 
