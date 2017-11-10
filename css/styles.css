@@ -18,18 +18,17 @@
 
 /* Typography --------------------------------------------------------------- */
 h1.text-light {
-  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  font-weight: 600; }
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
 h1 {
   font-family: "Poppins", sans-serif;
   color: #3a6a80;
-  font-weight: 600; }
+  font-weight: 700; }
 
 h2 {
   font-family: "Poppins", sans-serif;
   color: #039589;
-  font-weight: 600; }
+  font-weight: 700; }
 
 /* Navigation --------------------------------------------------------------- */
 .navbar {
