@@ -30,6 +30,11 @@ h2 {
   color: #039589;
   font-weight: 600; }
 
+h3 {
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  font-style: italic; }
+
 /* Navigation --------------------------------------------------------------- */
 .navbar {
   background: #eeeeee;
