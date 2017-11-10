@@ -5,6 +5,9 @@
 * {
   font-family: "Open Sans", sans-serif; }
 
+.container {
+  margin: auto; }
+
 /* Header --------------------------------------------------------------- */
 .jumbotron.masthead {
   padding-top: 150px;
