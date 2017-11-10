@@ -1,26 +1,37 @@
-// Google Fonts
+/* Imports --------------------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i|Poppins:300,400,700');
 
-// Variables
-
-$nav-bkg: #eee;
-$footer-bkg: #eee;
-$button-bkg: teal;
+/* Variables --------------------------------------------------------------- */
+$ltgray: rgb(238,238,238); // aka #eee
+$transparent-ltgray: rgba(238,238,238, .8); // aka #eee
+$teal: #039589;
+$transparent-teal: rgba(3,149,137,.8);
+$blue: #3a6a80;
+$nav-bkg: $ltgray;
+$footer-bkg: $ltgray;
+$button-bkg: $teal;
+$button-hover: $blue;
 $shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 $shadow-md: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 $shadow-lg: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 $open-sans: 'Open Sans', sans-serif;
 $poppins: 'Poppins', sans-serif;
 
+/* General --------------------------------------------------------------- */
+
 *{
 	font-family: $open-sans;
 }
+
 .container{
 	margin: 1em auto;
 }
+
+/* Header --------------------------------------------------------------- */
+
 .jumbotron.masthead{
-	padding-top: 125px;
-	background: url(../images/pc-bkg.png) no-repeat center center;
+	padding-top: 150px;
+	background: url(../images/website-banner.jpg) no-repeat center center;
 	background-size: cover;
 	border-radius: 0;
 	box-shadow: $shadow-sm;
@@ -30,17 +41,38 @@ $poppins: 'Poppins', sans-serif;
 h1.text-light{
 	text-shadow: $shadow-md;
 }
+/* Navigation --------------------------------------------------------------- */
+
 .navbar{
 	background: $nav-bkg;
 	box-shadow: $shadow-sm;
 }
+nav img{
+	width: 250px;
+	height: auto;
+}
+/* Footer --------------------------------------------------------------- */
 
 footer{
 	background: $footer-bkg;
 	width: 100%;
 }
+footer img{
+	width: 35px;
+	height: auto;
+}
+/* Buttons --------------------------------------------------------------- */
+
 .btn-primary{
 	height: 45px;
 	background: $button-bkg;
 	border: 1px solid $button-bkg;
+}
+.btn-primary:hover{
+	height: 45px;
+	background: $button-hover;
+	border: 1px solid $button-hover;
+}
+.social-link{
+	margin-top: 7px;
 }

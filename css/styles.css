@@ -1,13 +1,17 @@
+/* Imports --------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i|Poppins:300,400,700");
+/* Variables --------------------------------------------------------------- */
+/* General --------------------------------------------------------------- */
 * {
   font-family: "Open Sans", sans-serif; }
 
 .container {
   margin: 1em auto; }
 
+/* Header --------------------------------------------------------------- */
 .jumbotron.masthead {
-  padding-top: 125px;
-  background: url(../images/pc-bkg.png) no-repeat center center;
+  padding-top: 150px;
+  background: url(../images/website-banner.jpg) no-repeat center center;
   background-size: cover;
   border-radius: 0;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
@@ -16,15 +20,34 @@
 h1.text-light {
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
+/* Navigation --------------------------------------------------------------- */
 .navbar {
-  background: #eee;
+  background: #eeeeee;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
+nav img {
+  width: 250px;
+  height: auto; }
+
+/* Footer --------------------------------------------------------------- */
 footer {
-  background: #eee;
+  background: #eeeeee;
   width: 100%; }
 
+footer img {
+  width: 35px;
+  height: auto; }
+
+/* Buttons --------------------------------------------------------------- */
 .btn-primary {
   height: 45px;
-  background: teal;
-  border: 1px solid teal; }
+  background: #039589;
+  border: 1px solid #039589; }
+
+.btn-primary:hover {
+  height: 45px;
+  background: #3a6a80;
+  border: 1px solid #3a6a80; }
+
+.social-link {
+  margin-top: 7px; }
