@@ -37,6 +37,7 @@ $poppins: 'Poppins', sans-serif;
 	box-shadow: $shadow-sm;
 }
 
+
 /* Typography --------------------------------------------------------------- */
 
 h1.text-light{
@@ -52,12 +53,12 @@ nav img{
 	width: 225px;
 	height: auto;
 }
-@media only screen and (max-width: 576px) {
-		nav img {
-			width: 200px;
-			height: auto;
-	}		
-}
+//@media only screen and (max-width: 576px) {
+//	nav img {
+//		width: 200px;
+//		height: auto;
+//	}		
+//}
 /* Footer --------------------------------------------------------------- */
 
 footer{
