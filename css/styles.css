@@ -1,5 +1,6 @@
 /* Imports --------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i|Poppins:300,400,600,700");
+/* Mixins ------------------------------------------------------------------ */
 /* Variables --------------------------------------------------------------- */
 /* General --------------------------------------------------------------- */
 * {
@@ -20,21 +21,26 @@
 h1.text-light {
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
-h1 {
-  font-family: "Poppins", sans-serif;
-  color: #3a6a80;
-  font-weight: 600; }
+h1, h4 {
+  font-family: "Open Sans", sans-serif;
+  color: #232323;
+  font-weight: 400; }
 
-h2 {
+h2, h5 {
   font-family: "Poppins", sans-serif;
-  color: #039589;
-  font-weight: 600; }
+  color: #a5b339;
+  font-weight: 600;
+  margin: 15px 0; }
 
-h3 {
-  font-weight: 300;
-  font-family: "Poppins", sans-serif;
+h3, h6 {
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
   font-style: italic;
   color: #039589; }
+
+p {
+  line-height: 2.15;
+  margin: 15px 0; }
 
 /* Navigation --------------------------------------------------------------- */
 .navbar {
@@ -47,10 +53,11 @@ nav img {
 
 nav li a {
   font-weight: 600;
-  color: #039589; }
+  color: #3a6a80;
+  letter-spacing: 0.025em; }
 
 nav li a:hover, nav li a.active {
-  color: #3a6a80; }
+  color: #039589; }
 
 /* Footer --------------------------------------------------------------- */
 footer {
@@ -61,16 +68,53 @@ footer img {
   width: 35px;
   height: auto; }
 
-/* Buttons --------------------------------------------------------------- */
-.btn-primary {
-  height: 45px;
-  background: #039589;
-  border: 1px solid #039589; }
+/* Links --------------------------------------------------------------- */
+a {
+  color: #3a6a80;
+  font-weight: 600;
+  letter-spacing: 0.025em; }
 
-.btn-primary:hover {
-  height: 45px;
-  background: #3a6a80;
-  border: 1px solid #3a6a80; }
+a:hover, a:active {
+  color: #039589; }
+
+/* Buttons --------------------------------------------------------------- */
+/*
+.btn-primary{
+	height: 45px;
+	background: $button-bkg;
+	border: 1px solid $button-bkg;
+}
+.btn-primary:hover{
+	height: 45px;
+	background: $button-hover;
+	border: 1px solid $button-hover;
+}
+*/
+.fa {
+  color: #039589; }
+
+.fa:hover {
+  color: #3a6a80;
+  border-color: #3a6a80; }
 
 .social-link {
-  margin-top: 7px; }
+  padding: 3px;
+  border-radius: 5px;
+  width: 48px;
+  border: 0.075em solid #039589; }
+
+/* Resume ----------------------------------------------------------------*/
+#accordion h4 {
+  font-weight: 600;
+  font-size: 1.2em;
+  margin: 15px 0; }
+
+#accordion h2 {
+  padding: 5px 0;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #a5b339; }
+
+span.left {
+  float: right;
+  font-weight: inherit;
+  font-style: italic; }

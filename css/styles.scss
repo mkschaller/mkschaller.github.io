@@ -1,10 +1,29 @@
 /* Imports --------------------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i|Poppins:300,400,600,700');
 
+/* Mixins ------------------------------------------------------------------ */
+@mixin border-gradient($width, $style, $color1, $color2) {
+	border-width: $width;
+    border-style: $style;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 100%, 0 0, from($color1), to($color2)) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(bottom, $color1, $color2) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(bottom, $color1, $color2) 1 100%;  
+    -o-border-image:
+      -o-linear-gradient(bottom, $color1, $color2) 1 100%;
+    border-image:
+      linear-gradient(to top, $color1, $color2) 1 100%;
+}
+
 /* Variables --------------------------------------------------------------- */
 $ltgray: rgb(238,238,238); // aka #eee
+$gray: #444;
+$dkgray: #232323;
 $transparent-ltgray: rgba(238,238,238, .8); // aka #eee
 $teal: #039589;
+$lime: #a5b339;
 $transparent-teal: rgba(3,149,137,.8);
 $blue: #3a6a80;
 $nav-bkg: $ltgray;
@@ -45,21 +64,26 @@ h1.text-light{
 	text-shadow: $shadow-md;
 }
 
-h1{
-	font-family: $poppins;
-	color: $blue;
-	font-weight: 600;
+h1, h4{
+	font-family: $open-sans;
+	color: $dkgray;
+	font-weight: 400;
 }
-h2{
+h2, h5{
 	font-family: $poppins;
-	color: $teal;
+	color: $lime;
 	font-weight: 600;
+	margin: 15px 0;
 }
-h3{
-	font-weight: 300;
-	font-family: $poppins;
+h3, h6{
+	font-weight: 600;
+	font-family: $open-sans;
 	font-style: italic;
 	color: $teal;
+}
+p{
+	line-height: 2.15;
+	margin: 15px 0;
 }
 /* Navigation --------------------------------------------------------------- */
 
@@ -73,10 +97,11 @@ nav img{
 }
 nav li a{
 	font-weight: 600;
-	color: $teal;
+	color: $blue;
+	letter-spacing: 0.025em;
 }
 nav li a:hover, nav li a.active{
-	color: $blue;
+	color: $teal;
 }
 /* Footer --------------------------------------------------------------- */
 
@@ -88,8 +113,18 @@ footer img{
 	width: 35px;
 	height: auto;
 }
-/* Buttons --------------------------------------------------------------- */
+/* Links --------------------------------------------------------------- */
+a{
+	color: $blue;
+	font-weight: 600;
+	letter-spacing: 0.025em;
+}
+a:hover, a:active{
+	color: $teal
+}
 
+/* Buttons --------------------------------------------------------------- */
+/*
 .btn-primary{
 	height: 45px;
 	background: $button-bkg;
@@ -100,6 +135,37 @@ footer img{
 	background: $button-hover;
 	border: 1px solid $button-hover;
 }
-.social-link{
-	margin-top: 7px;
+*/
+.fa{
+	color: $teal;
 }
+.fa:hover{
+	color: $blue;
+	border-color: $blue;
+}
+.social-link{
+//	@include border-gradient(3px, solid, $teal, $lime);
+	padding: 3px;
+	border-radius: 5px;
+	width: 48px;
+	border: .075em solid $teal;  
+//    border-image-source: linear-gradient($teal, $lime);
+//    border-image-slice: 3;	
+}
+/* Resume ----------------------------------------------------------------*/
+#accordion h4{
+	font-weight: 600;
+	font-size: 1.2em;
+	margin: 15px 0;
+}
+#accordion h2{
+	padding: 5px 0;
+	margin-bottom: 15px;
+	border-bottom: 3px solid $lime;
+}
+
+span.left {
+            float: right;
+            font-weight: inherit;
+            font-style: italic;
+        }
