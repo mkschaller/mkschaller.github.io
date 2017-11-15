@@ -28,7 +28,7 @@ h1, h4 {
 
 h2, h5 {
   font-family: "Poppins", sans-serif;
-  color: #a5b339;
+  color: #3a6a80;
   font-weight: 600;
   margin: 15px 0; }
 
@@ -70,12 +70,12 @@ footer img {
 
 /* Links --------------------------------------------------------------- */
 a {
-  color: #3a6a80;
+  color: #039589;
   font-weight: 600;
   letter-spacing: 0.025em; }
 
 a:hover, a:active {
-  color: #039589; }
+  color: #3a6a80; }
 
 /* Buttons --------------------------------------------------------------- */
 /*
@@ -112,9 +112,29 @@ a:hover, a:active {
 #accordion h2 {
   padding: 5px 0;
   margin-bottom: 15px;
-  border-bottom: 3px solid #a5b339; }
+  border-bottom: 3px solid #3a6a80; }
 
 span.left {
   float: right;
   font-weight: inherit;
   font-style: italic; }
+
+/* Form ----------------------------------------------------------------*/
+#error {
+  font-weight: 700;
+  color: firebrick;
+  letter-spacing: 0.025em; }
+
+/* Footer ----------------------------------------------------------------*/
+html, body {
+  height: 100%; }
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -280px;
+  padding: 0 0 280px; }
+
+footer {
+  height: 280px; }

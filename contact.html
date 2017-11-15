@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio of McKenna Schaller</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  
+  <script>
+	  		// Put current year in copyright of footer
+			$(document).ready(function(){
+				var date = new Date();
+				var year = date.getFullYear();
+				$("#year").html(year)
+			});
+  </script>
+  
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-faded  fixed-top">
+    <div class="container">
+	  <a class="navbar-brand" href="index.html"><img src="images/text-logo.png" alt="PC"></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+		<ul class="navbar-nav nav-justified">
+		  <li class="nav-item p-2">
+			<a class="nav-link" href="resume.html">Resume</a>
+		  </li>
+		  <li class="nav-item p-2">
+			<a class="nav-link" href="portfolio.html">Portfolio</a>
+		  </li>
+		  <li class="nav-item p-2">
+			<a class="nav-link active" href="contact.html">Contact</a>
+		  </li>    
+		</ul>
+	  </div>  
+	  </div>
+	</nav>
+	
+ 	<header class="jumbotron masthead">
+ 		<h1 class="display-4 text-center text-light">Web and graphic designer.</h1>
+ 	</header>
+    <main class="container m-5 mx-auto">
+      	<h1>Contact</h1>
+       	<div class="row">
+       	<div class="col-sm-5">
+       		<h2>Contact Details</h2>
+       		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione reiciendis ducimus, fuga, consequuntur quasi adipisci molestias blanditiis laborum veritatis harum magni aperiam minima voluptatum quisquam hic asperiores tempore rerum omnis?</p>
+       	</div>
+<!--       		<form class="col-sm-7" name="contact" id="contact" method="POST" action="http://formspree.io/mckennakschaller@gmail.com">-->
+      	<form class="col-sm-7">
+       		<h2>Contact Form</h2>
+       		<p>Fill out the form to contact me or <a href="mailto:mckennakschaller@gmail.com">send me an email</a>.</p>
+			  
+			  
+			  
+			  <div class="form-group">
+				<label for="firstname">First Name:</label>
+				<input class="form-control" id="firstname" placeholder="First name" onblur="firstCheck()">
+			  </div>
+			  
+			  <div class="form-group">
+				<label for="lastname">Last Name:</label>
+				<input class="form-control" id="lastname" placeholder="Last name" onblur="lastCheck()">
+			  </div>
+			  
+			  <div class="form-group">
+				<label for="phone">Phone:</label>
+				<input type="text" class="form-control" id="phone" placeholder="XXX XXX-XXXX" onblur="phoneCheck()">
+			  </div>
+			  
+			  <div class="form-group">
+				<label for="cell">Cell:</label>
+				<input type="text" class="form-control" id="cell" placeholder="XXX XXX-XXXX" onblur="cellCheck()">
+			  </div>
+			 
+			  <div class="form-group">
+				<label for="email">Email address:</label>
+				<input type="email" class="form-control" id="email" placeholder="name@example.com" onblur="emailCheck()">
+			  </div>
+			  
+			  <div class="form-group">
+				<label for="address">Address 1:</label>
+				<input class="form-control" id="address" placeholder="42 Wallaby Way">
+			  </div>
+			  
+			  <div class="form-group">
+				<label for="address">Address 2:</label>
+				<input class="form-control" id="address2" placeholder="Suite E">
+			  </div>
+			  
+			  <div class="form-group">
+				<label for="lastname">City:</label>
+				<input class="form-control" id="city" placeholder="Sydney">
+			  </div>
+			  
+			  <div class="form-group">
+				<label for="state">State:</label>
+				<select class="form-control" id="state">
+				  <option>Alabama</option>
+				  <option>Alaska</option>
+				  <option>Arizona</option>
+				  <option>Arkansas</option>
+				  <option>California</option>
+				  <option>Colorado</option>
+				  <option>Conneticut</option>
+				  <option>Delaware</option>
+				  <option>Florida</option>
+				  <option>Georgia</option>
+				  <option>Hawaii</option>
+				  <option>Idaho</option>
+				  <option>Illinois</option>
+				  <option>Indiana</option>
+				  <option>Iowa</option>
+				  <option>Kansas</option>
+				  <option>Kentucky</option>
+				  <option>Lousiana</option>
+				  <option>Maine</option>
+				  <option>Maryland</option>
+				  <option>Massachusetts</option>
+				  <option>Michigan</option>
+				  <option>Minnesota</option>
+				  <option>Mississippi</option>
+				  <option>Missouri</option>
+				  <option>Montana</option>
+				  <option>Nebraska</option>
+				  <option>Nevada</option>
+				  <option>New Hampshire</option>
+				  <option>New Jersey</option>
+				  <option>New Mexico</option>
+				  <option>New York</option>
+				  <option>North Carolina</option>
+				  <option>North Dakota</option>
+				  <option>Ohio</option>
+				  <option>Oklahoma</option>
+				  <option>Oregon</option>
+				  <option>Pennsylvania</option>
+				  <option>Rhode Island</option>
+				  <option>South Carolina</option>
+				  <option>South Dakota</option>
+				  <option>Tennessee</option>
+				  <option>Texas</option>
+				  <option>Utah</option>
+				  <option>Vermont</option>
+				  <option>Virginia</option>
+				  <option>Washington</option>
+				  <option>West Virginia</option>
+				  <option>Wisconsin</option>
+				  <option>Wyoming</option>
+				</select>
+			  </div>
+			  
+			  <div class="form-group">
+				<label for="zipcode">Zipcode:</label>
+				<input class="form-control" id="zip" placeholder="60014">
+			  </div>
+			  <p id="error">&nbsp;</p>
+			  
+			  <button class="btn btn-outline-info" type="submit">Submit </button>
+			  <button class="btn btn-outline-info" type="reset">Reset </button>
+		</form>
+       		
+       		
+       		
+       		
+       		
+       		
+       		
+       		
+       	</div>	
+    </main>
+     <footer class="p-3">
+    	<div class="row container">
+			<div class="col-md-6 col p-1">
+				<h4>Quick Biography</h4>
+				<p>Web designer with an adoration for pretty typography, cats, and lattes &#40;or anything with caffeine&#41;. </p>
+			</div>
+			<div class="col-md-1"><!--Empty space--></div>
+			<div class="col-md-4 p-1">
+				<h4>Visit me online!</h4>
+				<div class="d-flex justify-content-around">
+				<a href="https://github.com/mkschaller" class="btn m-1" role="button" target="_blank"><i class="fa fa-github fa-2x social-link" aria-hidden="true"></i></a>
+				<a href="https://www.linkedin.com/in/mckenna-schaller/" class="btn m-1" role="button"  target="_blank"><i class="fa fa-linkedin-square fa-2x social-link" aria-hidden="true"></i></a>
+				<a href="mailto:mckennakschaller@gmail.com" class="btn m-1" role="button"><i class="fa fa-envelope fa-2x social-link" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			
+  		</div>
+   		
+   		<div class="text-center container">
+   		<hr>
+   			<img src="images/logo.png" alt="PC" class="m-1">
+   			<p class="m-2">&copy; <span id="year"></span> McKenna Schaller</p>
+   		</div>
+    </footer>
+    
+    <script src="js/expression-validate.js"></script>
+</body>
+</html>
