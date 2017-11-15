@@ -114,28 +114,17 @@ footer img{
 	height: auto;
 }
 /* Links --------------------------------------------------------------- */
-a{
+a {
 	color: $teal;
 	font-weight: 600;
 	letter-spacing: 0.025em;
 }
-a:hover, a:active{
-	color: $blue
+a:hover, a:active {
+	color: $blue;
 }
 
 /* Buttons --------------------------------------------------------------- */
-/*
-.btn-primary{
-	height: 45px;
-	background: $button-bkg;
-	border: 1px solid $button-bkg;
-}
-.btn-primary:hover{
-	height: 45px;
-	background: $button-hover;
-	border: 1px solid $button-hover;
-}
-*/
+
 .fa{
 	color: $teal;
 }
@@ -144,13 +133,10 @@ a:hover, a:active{
 	border-color: $blue;
 }
 .social-link{
-//	@include border-gradient(3px, solid, $teal, $lime);
 	padding: 3px;
 	border-radius: 5px;
 	width: 48px;
 	border: .075em solid $teal;  
-//    border-image-source: linear-gradient($teal, $lime);
-//    border-image-slice: 3;	
 }
 /* Resume ----------------------------------------------------------------*/
 #accordion h4{
@@ -177,6 +163,7 @@ span.left {
 	color: firebrick;
 	letter-spacing: 0.025em;
 }
+
 
 /* Footer ----------------------------------------------------------------*/
 

@@ -78,18 +78,6 @@ a:hover, a:active {
   color: #3a6a80; }
 
 /* Buttons --------------------------------------------------------------- */
-/*
-.btn-primary{
-	height: 45px;
-	background: $button-bkg;
-	border: 1px solid $button-bkg;
-}
-.btn-primary:hover{
-	height: 45px;
-	background: $button-hover;
-	border: 1px solid $button-hover;
-}
-*/
 .fa {
   color: #039589; }
 
