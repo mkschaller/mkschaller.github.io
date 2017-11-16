@@ -49,11 +49,11 @@ function phoneCheck(){
     var phone = $("phone").value;
     var testPhone = new RegExp("^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}$");
     if(!testPhone.test(phone)){
-        error.innerHTML="Please use the format (555) 555-5555'";
+        error.innerHTML="Please use the format (555) 555-5555";
         $("phone").value = "";
     }
     else{
-        error.innerHTML = "Phone number meets criteria";
+        error.innerHTML = "Phone number meets criteria.";
     }
 
 }
@@ -63,11 +63,27 @@ function cellCheck(){
     var cell = $("cell").value;
     var testCell = new RegExp("^([\(]{1}[0-9]{3}[\)]{1}[ ]{1}[0-9]{3}[\-]{1}[0-9]{4})$");
     if(!testCell.test(cell)){
-        error.innerHTML="Please use the format (555) 555-5555'";
+        error.innerHTML="Please use the format (555) 555-5555";
         $("cell").value = "";
     }
     else{
-        error.innerHTML = "Phone number meets criteria";
+        error.innerHTML = "Phone number meets criteria.";
     }
 
 }
+
+function zipCheck(){
+	"use strict";
+    var zip = $("zip").value;
+    var testZIP = new RegExp("^\d{5}(-\d{4})?$");
+    if(!testZIP.test(zip)){
+        error.innerHTML="Please enter a valid US zipcode.";
+        $("cell").value = "";
+    }
+    else{
+        error.innerHTML = "Zipcode meets criteria.";
+    }
+
+}
+
+
