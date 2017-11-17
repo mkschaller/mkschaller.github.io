@@ -96,6 +96,19 @@ p{
 	margin-left: -10px;
 }
 /* Navigation --------------------------------------------------------------- */
+.navbar-toggler {
+    padding: .5rem .75rem;
+    font-size: 1.75rem;
+    line-height: 1;
+    border: 0px solid $gray;
+    border-radius: .25rem;
+	margin-top: 10px;
+}
+.navbar-toggler .fa:hover{
+	background: transparent;
+	color: $blue;
+}
+
 
 .navbar{
 	background: $nav-bkg;
@@ -117,7 +130,7 @@ nav li a:hover, nav li a.active{
 	border-bottom: 3px solid $teal;
 	transition: all 0.3s;
 }
-@media only screen and (max-width: 575px) { 
+@media only screen and (max-width: 576px) { 
 	// Remove underline in mobile toggle menu
 	nav li a{
 		font-weight: 600;
