@@ -21,6 +21,7 @@
 $ltgray: rgb(238,238,238); // aka #eee
 $gray: #444;
 $dkgray: #232323;
+$white: #fff;
 $transparent-ltgray: rgba(238,238,238, .8); // aka #eee
 $teal: #039589;
 $lime: #a5b339;
@@ -99,9 +100,12 @@ nav li a{
 	font-weight: 600;
 	color: $blue;
 	letter-spacing: 0.025em;
+	padding-bottom: 10px;
+	border-bottom: 3px solid $blue;
 }
 nav li a:hover, nav li a.active{
 	color: $teal;
+	border-bottom: 3px solid $teal;
 }
 /* Footer --------------------------------------------------------------- */
 
@@ -129,8 +133,8 @@ a:hover, a:active {
 	color: $teal;
 }
 .fa:hover{
-	color: $blue;
-	border-color: $blue;
+	color: $white;
+	background: $teal;
 }
 .social-link{
 	padding: 3px;
@@ -163,8 +167,27 @@ span.left {
 	color: firebrick;
 	letter-spacing: 0.025em;
 }
-
-
+.form-button{
+	border-width: 2px;
+	margin-right: 10px;
+	border-style: solid;
+	border-color: $teal;
+	background: $white;
+	font-weight: 700;
+	letter-spacing: 0.025em;
+	color: $teal;
+	border-radius: 5px; // match border radius of social icons
+}
+.form-button:hover{
+	background: $teal;
+	color: $white;
+}
+form label{
+	font-weight: 700;
+	letter-spacing: 0.025em;
+	font-family: $poppins;
+	color: $blue;
+}
 /* Footer ----------------------------------------------------------------*/
 
 html, body {

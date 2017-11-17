@@ -47,7 +47,7 @@ function emailCheck(){
 function phoneCheck(){
 	"use strict";
     var phone = $("phone").value;
-    var testPhone = new RegExp("^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}$");
+    var testPhone = new RegExp("^([\(]{1}[0-9]{3}[\)]{1}[ ]{1}[0-9]{3}[\-]{1}[0-9]{4})$");
     if(!testPhone.test(phone)){
         error.innerHTML="Please use the format (555) 555-5555";
         $("phone").value = "";
@@ -75,10 +75,10 @@ function cellCheck(){
 function zipCheck(){
 	"use strict";
     var zip = $("zip").value;
-    var testZIP = new RegExp("^\d{5}(-\d{4})?$");
+    var testZIP = new RegExp("^[0-9]{5}$");
     if(!testZIP.test(zip)){
-        error.innerHTML="Please enter a valid US zipcode.";
-        $("cell").value = "";
+        error.innerHTML="Please enter a 5-digit US zipcode.";
+        $("zip").value = "";
     }
     else{
         error.innerHTML = "Zipcode meets criteria.";

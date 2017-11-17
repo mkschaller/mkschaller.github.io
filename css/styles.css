@@ -54,10 +54,13 @@ nav img {
 nav li a {
   font-weight: 600;
   color: #3a6a80;
-  letter-spacing: 0.025em; }
+  letter-spacing: 0.025em;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #3a6a80; }
 
 nav li a:hover, nav li a.active {
-  color: #039589; }
+  color: #039589;
+  border-bottom: 3px solid #039589; }
 
 /* Footer --------------------------------------------------------------- */
 footer {
@@ -82,8 +85,8 @@ a:hover, a:active {
   color: #039589; }
 
 .fa:hover {
-  color: #3a6a80;
-  border-color: #3a6a80; }
+  color: #fff;
+  background: #039589; }
 
 .social-link {
   padding: 3px;
@@ -112,6 +115,27 @@ span.left {
   font-weight: 700;
   color: firebrick;
   letter-spacing: 0.025em; }
+
+.form-button {
+  border-width: 2px;
+  margin-right: 10px;
+  border-style: solid;
+  border-color: #039589;
+  background: #fff;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #039589;
+  border-radius: 5px; }
+
+.form-button:hover {
+  background: #039589;
+  color: #fff; }
+
+form label {
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  font-family: "Poppins", sans-serif;
+  color: #3a6a80; }
 
 /* Footer ----------------------------------------------------------------*/
 html, body {
