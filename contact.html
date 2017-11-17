@@ -22,7 +22,7 @@
   </script>
   
 </head>
-<body>
+<body> <div id="wrap">
     <nav class="navbar navbar-expand-sm bg-faded  fixed-top">
     <div class="container">
 	  <a class="navbar-brand" href="index.html"><img src="images/text-logo.png" alt="PC"></a>
@@ -51,12 +51,13 @@
     <main class="container m-5 mx-auto">
       	<h1>Contact</h1>
        	<div class="row">
-       	<div class="col-sm-5">
-       		<h2>Contact Details</h2>
-       		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione reiciendis ducimus, fuga, consequuntur quasi adipisci molestias blanditiis laborum veritatis harum magni aperiam minima voluptatum quisquam hic asperiores tempore rerum omnis?</p>
-       	</div>
-       	<div class="col-sm-1">&nbsp;</div>
-       		<form class="col-sm-6 form-group" name="contact" id="contact" method="POST" action="http://formspree.io/mckennakschaller@gmail.com">
+       	<div class="col-sm-6 col-lg-4">
+       		<h2>Location</h2>
+       		<p>Lake in the Hills, IL</p>
+			<h2>Email</h2>
+       		<p>mckennakschaller@gmail.com</p>
+        </div>
+       		<form class="col-sm-6 col-lg-8 form-group" name="contact" id="contact" method="POST" action="http://formspree.io/mckennakschaller@gmail.com">
       	
        		<h2>Contact Form</h2>
        		<p>Fill out the form to contact me or <a href="mailto:mckennakschaller@gmail.com">send me an email</a>.</p>
@@ -169,16 +170,15 @@
 			  <button class="btn form-button" type="reset">Reset </button>
 		</form>
        		
-       		
-       		
-       		
-       		
-       		
-       		
-       		
        	</div>	
-    </main>
-     <footer class="p-3">
+   </main>
+    <div class="jumbotron before-footer-widget">
+  			<h2 class="text-center">Interested in working with me?</h2>
+  			<p class="text-center"><a href="contact.html"><button class="btn before-footer-button m-3">Contact me!</button></a></p>
+  		</div>
+    </div>
+    
+     <footer class="p-4">
     	<div class="row container">
 			<div class="col-md-6 col p-1">
 				<h4>Quick Biography</h4>
@@ -202,7 +202,5 @@
    			<p class="m-2">&copy; <span id="year"></span> McKenna Schaller</p>
    		</div>
     </footer>
-    
-    <script src="js/expression-validate.js"></script>
-</body>
+    </body>
 </html>
