@@ -271,6 +271,20 @@ html, body {
 footer {
   height: 400px;
 }
+
+@media only screen and (max-width: 576px){
+	#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -500px;
+  padding: 0 0 500px;
+}
+
+footer {
+  height: 500px;
+}
+}
 /* Card ---------------------------------------------------------------------*/
 .card-shadow{
 	box-shadow: $shadow-sm;
