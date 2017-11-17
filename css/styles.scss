@@ -145,16 +145,7 @@ nav li a:hover, nav li a.active{
 		transition: all 0.3s;
 	} 
 }
-/* Footer --------------------------------------------------------------- */
 
-footer{
-	background: $footer-bkg;
-	width: 100%;
-}
-footer img{
-	width: 35px;
-	height: auto;
-}
 /* Links --------------------------------------------------------------- */
 a {
 	color: $teal;
@@ -256,6 +247,15 @@ form label{
 }
 /* Footer ----------------------------------------------------------------*/
 
+footer{
+	background: $footer-bkg;
+	width: 100%;
+	height: 350px;
+}
+footer img{
+	width: 35px;
+	height: auto;
+}
 html, body {
   height: 100%;
 }
@@ -264,12 +264,8 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -400px;
-  padding: 0 0 400px;
-}
-
-footer {
-  height: 400px;
+  margin: 0 auto -350px;
+  padding: 0 0 350px;
 }
 
 @media only screen and (max-width: 576px){
@@ -277,12 +273,12 @@ footer {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -750px;
-  padding: 0 0 750px;
+  margin: 0 auto -500px;
+  padding: 0 0 500px;
 }
 
 footer {
-  height: 750px;
+  height: 500px;
 }
 }
 /* Card ---------------------------------------------------------------------*/
