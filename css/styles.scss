@@ -272,17 +272,17 @@ footer {
   height: 400px;
 }
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 7686px){
 	#wrap {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -500px;
-  padding: 0 0 500px;
+  margin: 0 auto -650px;
+  padding: 0 0 650px;
 }
 
 footer {
-  height: 500px;
+  height: 650px;
 }
 }
 /* Card ---------------------------------------------------------------------*/
