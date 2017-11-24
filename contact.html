@@ -1,106 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Portfolio of McKenna Schaller</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="images/logo.png" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-  
-  <script>
-	  		// Put current year in copyright of footer
-			$(document).ready(function(){
-				var date = new Date();
-				var year = date.getFullYear();
-				$("#year").html(year)
-			});
-  </script>
-  
+    <title>Portfolio of McKenna Schaller</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="js/expression-validate.js"></script>
+    <script>
+        // Put current year in copyright of footer
+        $(document).ready(function() {
+            var date = new Date();
+            var year = date.getFullYear();
+            $("#year").html(year)
+        });
+
+    </script>
+
 </head>
-<body> <div id="wrap">
-    <nav class="navbar navbar-expand-sm bg-faded  fixed-top">
-    <div class="container">
-	  <a class="navbar-brand" href="index.html"><img src="images/text-logo.png" alt="PC"></a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+
+<body>
+    <div id="wrap">
+        <nav class="navbar navbar-expand-sm bg-faded  fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/text-logo.png" alt="PC"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 		<span class=""><span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span></span>
 	  </button>
-	  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-		<ul class="navbar-nav nav-justified">
-		  <li class="nav-item p-2">
-			<a class="nav-link" href="resume.html">Resume</a>
-		  </li>
-		  <li class="nav-item p-2">
-			<a class="nav-link" href="portfolio.html">Portfolio</a>
-		  </li>
-		  <li class="nav-item p-2">
-			<a class="nav-link active" href="contact.html">Contact</a>
-		  </li>    
-		</ul>
-	  </div>  
-	  </div>
-	</nav>
-	
- 	<header class="jumbotron masthead">
- 		<h1 class="display-4 text-center text-light">Web and graphic designer.</h1>
- 	</header>
-    <main class="container m-5 mx-auto">
-      	<h1>Contact</h1>
-       	<div class="row">
-       		<form class="col-12 form-group" name="contact" id="contact" method="POST" action="http://formspree.io/mckennakschaller@gmail.com">
-      	
-       		<h2>Contact Form</h2>
-       		<p>Fill out the form to contact me or <a href="mailto:mckennakschaller@gmail.com">send me an email</a>.</p>
-			  
-			  
-			  
-			  <div class="form-group">
-				<label for="firstname">First Name:</label>
-				<input class="form-control form-control-sm" id="firstname" placeholder="First name" onblur="firstCheck()">
-			  </div>
-			  
-			  <div class="form-group">
-				<label for="lastname">Last Name:</label>
-				<input class="form-control form-control-sm" id="lastname" placeholder="Last name" onblur="lastCheck()">
-			  </div>
-			  
-			  <div class="form-group">
-				<label for="phone">Phone:</label>
-				<input type="text" class="form-control form-control-sm" id="phone" placeholder="(555) 555-5555" onblur="phoneCheck()">
-			  </div>
-			  
-			  <div class="form-group">
-				<label for="cell">Cell:</label>
-				<input type="text" class="form-control form-control-sm" id="cell" placeholder="(555) 555-5555" onblur="cellCheck()">
-			  </div>
-			 
-			  <div class="form-group">
-				<label for="email">Email address:</label>
-				<input type="email" class="form-control form-control-sm" id="email" placeholder="name@example.com" onblur="emailCheck()">
-			  </div>
-			  
-			  <div class="form-group">
-				<label for="address">Address 1:</label>
-				<input class="form-control form-control-sm" id="address" placeholder="42 Wallaby Way">
-			  </div>
-			  
-			  <div class="form-group">
-				<label for="address">Address 2:</label>
-				<input class="form-control form-control-sm" id="address2" placeholder="Suite E">
-			  </div>
-			  
-			  <div class="form-group">
-				<label for="lastname">City:</label>
-				<input class="form-control form-control-sm" id="city" placeholder="Sydney">
-			  </div>
-			  
-			  <div class="form-group">
-				<label for="state">State:</label>
-				<select class="form-control form-control-sm" id="state">
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav nav-justified">
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="jumbotron masthead">
+            <h1 class="display-4 text-center text-light">Web and graphic designer.</h1>
+        </header>
+        <main class="container m-5 mx-auto">
+            <h1>Contact</h1>
+            <div class="row">
+                <form class="col-12 form-group" name="contact" id="contact" method="POST" action="http://formspree.io/mckennakschaller@gmail.com">
+
+                    <h2>Contact Form</h2>
+                    <p>Fill out the form to contact me or <a href="mailto:mckennakschaller@gmail.com">send me an email</a>.</p>
+
+
+
+                    <div class="form-group">
+                        <label for="firstname">First Name:</label>
+                        <input class="form-control form-control-sm" id="firstname" placeholder="First name" onblur="firstCheck()">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname">Last Name:</label>
+                        <input class="form-control form-control-sm" id="lastname" placeholder="Last name" onblur="lastCheck()">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="text" class="form-control form-control-sm" id="phone" placeholder="(555) 555-5555" onblur="phoneCheck()">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cell">Cell:</label>
+                        <input type="text" class="form-control form-control-sm" id="cell" placeholder="(555) 555-5555" onblur="cellCheck()">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control form-control-sm" id="email" placeholder="name@example.com" onblur="emailCheck()">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address 1:</label>
+                        <input class="form-control form-control-sm" id="address" placeholder="42 Wallaby Way">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address 2:</label>
+                        <input class="form-control form-control-sm" id="address2" placeholder="Suite E">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname">City:</label>
+                        <input class="form-control form-control-sm" id="city" placeholder="Sydney">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="state">State:</label>
+                        <select class="form-control form-control-sm" id="state">
 				  <option>Alabama</option>
 				  <option>Alaska</option>
 				  <option>Arizona</option>
@@ -152,49 +156,52 @@
 				  <option>Wisconsin</option>
 				  <option>Wyoming</option>
 				</select>
-			  </div>
-			  
-			  <div class="form-group">
-				<label for="zipcode">Zipcode:</label>
-				<input class="form-control form-control-sm" id="zip" placeholder="60014" onBlur="zipCheck()">
-			  </div>
-			  <p id="error">&nbsp;</p>
-			  
-			  <button class="btn form-button" type="submit">Submit </button>
-			  <button class="btn form-button" type="reset">Reset </button>
-		</form>
-       		
-       	</div>	
-   </main>
-    <div class="jumbotron before-footer-widget">
-  			<h2 class="text-center">Interested in working with me?</h2>
-  			<p class="text-center"><a href="contact.html"><button class="btn before-footer-button m-3">Contact me!</button></a></p>
-  		</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Zipcode:</label>
+                        <input class="form-control form-control-sm" id="zip" placeholder="60014" onBlur="zipCheck()">
+                    </div>
+                    <p id="error">&nbsp;</p>
+
+                    <button class="btn form-button" type="submit">Submit </button>
+                    <button class="btn form-button" type="reset">Reset </button>
+                </form>
+
+            </div>
+        </main>
+        <div class="jumbotron before-footer-widget">
+            <h2 class="text-center">Interested in working with me?</h2>
+            <p class="text-center"><a href="contact.html"><button class="btn before-footer-button m-3">Contact me!</button></a></p>s
+        </div>
     </div>
-    
-     <footer class="p-4">
-    	<div class="row container">
-			<div class="col-md-6 col p-1">
-				<h4>Quick Biography</h4>
-				<p>Web designer with an adoration for pretty typography, cats, and lattes &#40;or anything with caffeine&#41;. </p>
-			</div>
-			<div class="col-md-1"><!--Empty space--></div>
-			<div class="col-md-4 p-1">
-				<h4>Visit me online!</h4>
-				<div class="d-flex justify-content-around">
-				<a href="https://github.com/mkschaller" class="btn m-1" role="button" target="_blank"><i class="fa fa-github fa-2x social-link" aria-hidden="true"></i></a>
-				<a href="https://www.linkedin.com/in/mckenna-schaller/" class="btn m-1" role="button"  target="_blank"><i class="fa fa-linkedin-square fa-2x social-link" aria-hidden="true"></i></a>
-				<a href="mailto:mckennakschaller@gmail.com" class="btn m-1" role="button"><i class="fa fa-envelope fa-2x social-link" aria-hidden="true"></i></a>
-				</div>
-			</div>
-			
-  		</div>
-   		
-   		<div class="text-center container">
-   		<hr>
-   			<img src="images/logo.png" alt="PC" class="m-1">
-   			<p class="m-2">&copy; <span id="year"></span> McKenna Schaller</p>
-   		</div>
+
+    <footer class="p-4">
+        <div class="row container">
+            <div class="col-md-6 col p-1">
+                <h4>Quick Biography</h4>
+                <p>Web designer with an adoration for pretty typography, cats, and lattes &#40;or anything with caffeine&#41;. </p>
+            </div>
+            <div class="col-md-1">
+                <!--Empty space-->
+            </div>
+            <div class="col-md-4 p-1">
+                <h4>Visit me online!</h4>
+                <div class="d-flex justify-content-around">
+                    <a href="https://github.com/mkschaller" class="btn m-1" role="button" target="_blank"><i class="fa fa-github fa-2x social-link" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/mckenna-schaller/" class="btn m-1" role="button" target="_blank"><i class="fa fa-linkedin-square fa-2x social-link" aria-hidden="true"></i></a>
+                    <a href="mailto:mckennakschaller@gmail.com" class="btn m-1" role="button"><i class="fa fa-envelope fa-2x social-link" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center container">
+            <hr>
+            <img src="images/logo.png" alt="PC" class="m-1">
+            <p class="m-2">&copy; <span id="year"></span> McKenna Schaller</p>
+        </div>
     </footer>
-    </body>
+</body>
+
 </html>
