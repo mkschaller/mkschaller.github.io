@@ -45,6 +45,7 @@
     }
 
 
+<<<<<<< HEAD
     function phoneCheck(){
         "use strict";
         var phone = $("phone").value;
@@ -57,6 +58,18 @@
             error.innerHTML = "Phone number meets criteria.";
         }
 
+=======
+function phoneCheck(){
+	"use strict";
+    var phone = $("phone").value;
+    var testPhone = new RegExp("^([\(]{1}[0-9]{3}[\)]{1}[ ]{1}[0-9]{3}[\-]{1}[0-9]{4})$");
+    if(!testPhone.test(phone)){
+        error.innerHTML="Please use the format (555) 555-5555";
+        $("phone").value = "";
+    }
+    else{
+        error.innerHTML = "Phone number meets criteria.";
+>>>>>>> f4072229b1ac995eb470217df9b814211bdf2b4f
     }
 
     function cellCheck(){
@@ -71,6 +84,7 @@
             error.innerHTML = "Phone number meets criteria.";
         }
 
+<<<<<<< HEAD
     }
 
     function zipCheck(){
@@ -87,3 +101,34 @@
 
     }
 
+=======
+function cellCheck(){
+	"use strict";
+    var cell = $("cell").value;
+    var testCell = new RegExp("^([\(]{1}[0-9]{3}[\)]{1}[ ]{1}[0-9]{3}[\-]{1}[0-9]{4})$");
+    if(!testCell.test(cell)){
+        error.innerHTML="Please use the format (555) 555-5555";
+        $("cell").value = "";
+    }
+    else{
+        error.innerHTML = "Phone number meets criteria.";
+    }
+
+}
+
+function zipCheck(){
+	"use strict";
+    var zip = $("zip").value;
+    var testZIP = new RegExp("^[0-9]{5}$");
+    if(!testZIP.test(zip)){
+        error.innerHTML="Please enter a 5-digit US zipcode.";
+        $("zip").value = "";
+    }
+    else{
+        error.innerHTML = "Zipcode meets criteria.";
+    }
+
+}
+
+
+>>>>>>> f4072229b1ac995eb470217df9b814211bdf2b4f
