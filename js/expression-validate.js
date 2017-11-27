@@ -45,7 +45,7 @@
     }
 
 
-<<<<<<< HEAD
+
     function phoneCheck(){
         "use strict";
         var phone = $("phone").value;
@@ -58,7 +58,7 @@
             error.innerHTML = "Phone number meets criteria.";
         }
 
-=======
+
 function phoneCheck(){
 	"use strict";
     var phone = $("phone").value;
@@ -69,7 +69,7 @@ function phoneCheck(){
     }
     else{
         error.innerHTML = "Phone number meets criteria.";
->>>>>>> f4072229b1ac995eb470217df9b814211bdf2b4f
+
     }
 
     function cellCheck(){
@@ -84,7 +84,7 @@ function phoneCheck(){
             error.innerHTML = "Phone number meets criteria.";
         }
 
-<<<<<<< HEAD
+
     }
 
     function zipCheck(){
@@ -101,7 +101,7 @@ function phoneCheck(){
 
     }
 
-=======
+
 function cellCheck(){
 	"use strict";
     var cell = $("cell").value;
@@ -129,6 +129,3 @@ function zipCheck(){
     }
 
 }
-
-
->>>>>>> f4072229b1ac995eb470217df9b814211bdf2b4f
