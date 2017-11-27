@@ -21,7 +21,13 @@
 h1.text-light {
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
-h1, h4 {
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: #039589;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+h4 {
   font-family: "Open Sans", sans-serif;
   color: #232323;
   font-weight: 400; }
@@ -33,7 +39,7 @@ h2, h5 {
   margin: 15px 0; }
 
 h3, h6 {
-  font-weight: 600;
+  font-weight: 400;
   font-family: "Open Sans", sans-serif;
   font-style: italic;
   color: #039589; }
@@ -42,7 +48,22 @@ p {
   line-height: 2.15;
   margin: 15px 0; }
 
+.left-home-margin {
+  margin-left: -10px; }
+
 /* Navigation --------------------------------------------------------------- */
+.navbar-toggler {
+  padding: .5rem .75rem;
+  font-size: 1.75rem;
+  line-height: 1;
+  border: 0px solid #444;
+  border-radius: .25rem;
+  margin-top: 10px; }
+
+.navbar-toggler .fa:hover {
+  background: transparent;
+  color: #3a6a80; }
+
 .navbar {
   background: #eeeeee;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
@@ -54,20 +75,27 @@ nav img {
 nav li a {
   font-weight: 600;
   color: #3a6a80;
-  letter-spacing: 0.025em; }
+  letter-spacing: 0.025em;
+  padding-bottom: 25px;
+  border-bottom: 3px solid #3a6a80; }
 
 nav li a:hover, nav li a.active {
-  color: #039589; }
+  color: #039589;
+  border-bottom: 3px solid #039589;
+  transition: all 0.3s; }
 
-/* Footer --------------------------------------------------------------- */
-footer {
-  background: #eeeeee;
-  width: 100%; }
+@media only screen and (max-width: 576px) {
+  nav li a {
+    font-weight: 600;
+    color: #3a6a80;
+    letter-spacing: 0.025em;
+    padding-bottom: auto;
+    border-bottom: 0px solid #3a6a80; }
 
-footer img {
-  width: 35px;
-  height: auto; }
-
+  nav li a:hover, nav li a.active {
+    color: #039589;
+    border-bottom: 0px solid #039589;
+    transition: all 0.3s; } }
 /* Links --------------------------------------------------------------- */
 a {
   color: #039589;
@@ -82,14 +110,40 @@ a:hover, a:active {
   color: #039589; }
 
 .fa:hover {
-  color: #3a6a80;
-  border-color: #3a6a80; }
+  color: #fff;
+  background: #039589;
+  transition: all 0.3s; }
 
 .social-link {
   padding: 3px;
   border-radius: 5px;
   width: 48px;
   border: 0.075em solid #039589; }
+
+/* Widgets ----------------------------------------------------------------*/
+.jumbotron.before-footer-widget {
+  border-radius: 0;
+  margin: 0;
+  margin-top: 1em;
+  width: 100%;
+  background: rgba(238, 238, 238, 0.5);
+  color: #fff; }
+
+.before-footer-button {
+  border-width: 2px;
+  margin-right: 10px;
+  border-style: solid;
+  border-color: #039589;
+  background: #fff;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #039589;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.before-footer-button:hover {
+  background: #039589;
+  color: #fff; }
 
 /* Resume ----------------------------------------------------------------*/
 #resume h4 {
@@ -113,7 +167,37 @@ span.left {
   color: firebrick;
   letter-spacing: 0.025em; }
 
+.form-button, .button {
+  border-width: 2px;
+  margin-right: 10px;
+  border-style: solid;
+  border-color: #039589;
+  background: #fff;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #039589;
+  border-radius: 5px; }
+
+.form-button:hover, .button:hover {
+  background: #039589;
+  color: #fff; }
+
+form label {
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  font-family: "Poppins", sans-serif;
+  color: #3a6a80; }
+
 /* Footer ----------------------------------------------------------------*/
+footer {
+  background: #eeeeee;
+  width: 100%;
+  height: 400px; }
+
+footer img {
+  width: 35px;
+  height: auto; }
+
 html, body {
   height: 100%; }
 
@@ -121,8 +205,25 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -280px;
-  padding: 0 0 280px; }
+  margin: 0 auto -400px;
+  padding: 0 0 400px; }
 
-footer {
-  height: 280px; }
+@media only screen and (max-width: 576px) {
+  #wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -500px;
+    padding: 0 0 500px; }
+
+  footer {
+    height: 500px; } }
+/* Card ---------------------------------------------------------------------*/
+.card-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border: 0;
+  margin: 0; }
+
+.card-shadow:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: 0.3s cubic-bezier; }
