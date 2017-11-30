@@ -1,0 +1,76 @@
+{
+    "images": [
+        {
+            "title": "Typographic Self Portrait",
+            "src": "1.png",
+            "alt": "self portrait created with typography",
+            "caption": "What words best describe you? The imagery in this poster was created using only words that illustrate who I am and my interests. Many different fonts, warps, and gradient overlays were used to achieve depth in the contours of the face and to create the forms in Photoshop."
+		},
+        {
+            "title": "Just My Type Membership Website",
+            "src": "2.png",
+            "alt": "wordpress membership website mockup",
+            "caption": "JMT is a fictitious subscription service. Users sign up on the website and can view the content so long as they are logged in to their account. The webpage uses WP Members. This project shows skill in customizing a WordPress theme to reflect a brand."
+		},
+        {
+            "title": "Bauhaus Climate Change Poster",
+            "src": "3.png",
+            "alt": "climate change poster",
+            "caption": "Bauhaus design featured geometry, strong use of typography, and form over function. This poster uses elements of Bauhaus design to illustrate the consequences of climate change for the environment. This project shows good use of the principles of design, especially movement."
+		},
+        {
+            "title": "Luna Shirt Designs Website",
+            "src": "4.png",
+            "alt": "website mockup",
+            "caption": "This website uses a child theme for WordPress created with Storefront as the parent theme. The website represents a clear brand identity. WooCommerce is used to sell fake t-shirts in different sizes and styles. WooCommerce is very complex, but this website was a good introduction to the plugin."
+		},
+        {
+            "title": "Refection",
+            "src": "5.png",
+            "alt": "digital painting of makeup reflection in mirror",
+            "caption": "What do you see when you look in the mirror? Is it what society sees? This digital painting presents images blurry makeup in the foreground juxtaposed with the reflection of the makeup clearly in the mirror. The image was created in Photoshop and is a value study."
+		},
+        {
+            "title": "CustomFit Sign",
+            "src": "6.png",
+            "alt": "company sign",
+            "caption": "CustomFit needed a new sign to match their rebranding and to advertise their new location. The new location had an existing twenty-feet by five-foot sign from the previous owners. The new design is both easy to read from a distance and reflects the company. The design had to be done at a scale because of the size limits of Illustrator files."
+		},
+        {
+            "title": "DesignFirst Transit Van",
+            "src": "7.png",
+            "alt": "car with vehicle wrap",
+            "caption": "DesignFirst presented Landmark Visibility Solutions with a small JPEG mockup of the vehicle wrap they needed. The design was recreated using assets from DesignFirst. The entire design was created to scale in Illustrator so that it be ready for printing on vinyl. The feathering of the image was particularly challenging because it required both feathering and image clipping in Adobe Illustrator."
+		},
+        {
+            "title": "Animal House Shelter Nonprofit Unsolicited Redesign",
+            "src": "8.png",
+            "alt": "website mockup",
+            "caption": "This website utilized a plethora of WordPress plugins. The website design was done using a child theme customized with CSS to represent the newly branded company. The website is laid out in an organized way so that the user can easily access information. The previous website introduced almost every detail of the business on the homepage. The new design broke up this information to implement top-fold design with usability in mind."
+		},
+        {
+            "title": "Illuminated Letter Q",
+            "src": "9.png",
+            "alt": "letter q design",
+            "caption": "Illuminated letters were highly decorative. They used the space they were in to combine the foreground and background of the image. These letter Qs draw inspiration from Celtic manuscripts but were designed with a more modern mindset. This project shows strong knowledge of utilizing the space of the composition."
+		},
+        {
+            "title": "Python Resources Website",
+            "src": "10.png",
+            "alt": "screenshot of website",
+            "caption": "Resources webpage to assist students in PRG105 at McHenry County College. The website uses Bootstrap as a foundation but is styled using the school’s colors. An accordion was used to divide the information into categories based on chapters in the textbook the class follows."
+		},
+        {
+            "title": "Course Splash Pages",
+            "src": "11.png",
+            "alt": "screenshot of website",
+            "caption": "These splash pages were designed to advertise individual courses at McHenry County College. The webpages were created using HTML & CSS with the Bootstrap framework. All the splash pages are responsive and were designed with mobile viewing in mind."
+		},
+        {
+            "title": "Claude Garamont Poster",
+            "src": "12.png",
+            "alt": "poster design",
+            "caption": "Poster about typographer Claude Garamont and the typeface he created – Garamond. The backdrop consists of letters and numbers 0-9 go up the right side of the poster. All text on the poster is in Garamond. I used a public domain image of Garamont and put his face inside a lowercase ‘g’ using Illustrator. I transferred the ‘g’ back to Photoshop where I finished the poster."
+		}
+	]
+}

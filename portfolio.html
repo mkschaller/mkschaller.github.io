@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" href="images/logo.png" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/captionbox.css">
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
@@ -50,13 +51,31 @@
     <main class="container m-5 mx-auto">
        	<div class="row">
        		<div class="col-sm-12">
-       			<h1>Portfolio</h1>
-       			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum doloribus repellendus sit expedita corrupti distinctio accusantium nihil, quae, corporis odio aut sed itaque soluta esse blanditiis quia deleniti. Vitae, distinctio.</p>
-       			<p>Dolor cumque consectetur vero laboriosam praesentium doloribus provident architecto necessitatibus delectus at iste harum, odit repudiandae veritatis ad impedit temporibus eveniet aliquid doloremque labore eum nesciunt, quaerat enim ab explicabo.</p>
-       			<p>Illo, vel, quidem iure sit consequatur tenetur commodi! Ex sit vero doloremque, dignissimos, velit ipsa dolor molestiae omnis ut sunt nisi vel sint. Eaque rem, sunt dolores, explicabo omnis qui.</p>
-       			<p>Ipsam cumque porro voluptate iusto voluptatum beatae, quasi aperiam velit vel eaque consequatur accusamus? Enim quidem dicta neque nisi! Odit deserunt qui saepe modi quos aliquid ad asperiores dolorum architecto!</p>
-       			<p>Sit provident atque ad non? Quasi eos illo quos consectetur reprehenderit, est dolor, amet quis ut sint minus cupiditate tenetur cum labore numquam. Necessitatibus saepe quasi obcaecati rerum harum illum!</p>
-    
+       			<section class="portfolio-cards"> <!-- element 1 -->
+					<!-- gets filled using JSON -->
+                </section>
+				<div id="captionBox"></div>
+				
+				
+				<!-- id of gallery is element 2 -->
+    			<script id="gallery" type="text/template"> 
+				{{#images}}
+				
+				<figure>
+				  <a class="captionBoxImage" href="images/portfolio/{{src}}">
+					<img title="{{title}}" src="images/portfolio/{{src}}" alt="{{alt}}">
+					<figcaption class="customCaption">
+					  <p class="img_name">{{title}}</p>
+					  <p>{{caption}}</p>
+					</figcaption>
+				  </a>         
+				</figure>
+				
+				{{/images}}
+
+
+			</script>
+
        		</div>
        		
        	</div>	
@@ -92,5 +111,41 @@
    			<p class="m-2">&copy; <span id="year"></span> McKenna Schaller</p>
    		</div>
     </footer>
+	
+	
+	
+	<!-- Old Version of jQuery-->
+	
+<!--	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>-->
+	<!-- Get Mustache -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+	<!-- Plugin JS -->
+	<script src="js/captionbox.js"></script>
+	<script src="js/exif.js"></script>
+	 <script>
+
+        $(function() {
+			
+            // JSON for plugin
+
+            $.getJSON('data.json', function(data) { // get correct file at same level
+
+                var template = $('#gallery').html(); // name of template, id of gallery is element 2
+
+                var html = Mustache.to_html(template, data);
+
+                $('.portfolio-cards').html(html); // element 1
+            }); // ends getJSON using jQuery
+        }); // ends function
+		 
+		 $( document ).ready(function() { // use CaptionBox plugin
+        $('#captionBox').CaptionBox({
+              disableRightClick: true,
+			  alterUrlFlag: false
+        });
+    });  
+
+    </script>
+
     </body>
 </html>
