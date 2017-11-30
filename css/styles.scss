@@ -107,11 +107,11 @@ nav li a{
 	color: $blue;
 	letter-spacing: 0.025em;
 	padding-bottom: 25px;
-	border-bottom: 3px solid $blue;
+//	border-bottom: 3px solid $blue;
 }
 nav li a:hover, nav li a.active{
 	color: $teal;
-	border-bottom: 3px solid $teal;
+//	border-bottom: 3px solid $teal;
 	transition: all 0.3s;
 }
 

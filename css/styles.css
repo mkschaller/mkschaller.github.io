@@ -90,12 +90,12 @@ nav li a {
   color: #3a6a80;
   letter-spacing: 0.025em;
   padding-bottom: 25px;
-  border-bottom: 3px solid #3a6a80;
+/*  border-bottom: 3px solid #3a6a80;*/
 }
 
 nav li a:hover, nav li a.active {
   color: #039589;
-  border-bottom: 3px solid #039589;
+/*  border-bottom: 3px solid #039589;*/
   transition: all 0.3s;
 }
 
