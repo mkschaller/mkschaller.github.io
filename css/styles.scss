@@ -291,3 +291,8 @@ footer {
 	box-shadow: $shadow-lg;
 	transition: 0.3s cubic-bezier;
 }
+
+/* Portfolio plugin ----------------------------------------------------------*/
+.captionBox{
+	z-index: 2000;
+}
