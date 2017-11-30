@@ -275,11 +275,11 @@ html, body {
   height: 100%;
   margin: 0 auto -500px;
   padding: 0 0 500px;
-}
+	}
 
-footer {
-  height: 500px;
-}
+	footer {
+	  height: 500px;
+	}
 }
 /* Card ---------------------------------------------------------------------*/
 .card-shadow{
@@ -295,4 +295,9 @@ footer {
 /* Portfolio plugin ----------------------------------------------------------*/
 .captionBox{
 	z-index: 1031;
+}
+
+.img-fluid{
+	max-width: 100%;
+	height: auto;
 }
