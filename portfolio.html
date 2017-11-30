@@ -101,6 +101,8 @@
 				<!-- images is name of class structure in JSON -->
     			<script id="gallery" type="text/template"> 
 				{{#images}}
+				<div id="captionBox"></div>
+				
 				<figure class="col-sm-4 col-md-3">
 				  <a class="captionBoxImage" href="images/portfolio/{{src}}">
 					<img title="{{title}}" src="images/thumbnails/{{thumbnail}}-thumb.jpg" alt="{{alt}}" class="img-fluid mx-auto card-shadow">
@@ -112,7 +114,7 @@
 				 </figure>
 				 
 				 
-				<div id="captionBox"></div>
+				
 				{{/images}}
 
 			</script>
