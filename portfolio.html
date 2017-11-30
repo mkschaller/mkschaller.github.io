@@ -50,33 +50,43 @@
  	</header>
     <main class="container m-5 mx-auto">
        	<div class="row">
-       		<div class="col-sm-12">
-       			<section class="portfolio-cards"> <!-- element 1 -->
-					<!-- gets filled using JSON -->
+				<section>
+					<figure class="col-sm-4">
+				  <a class="captionBoxImage" href="images/portfolio/1.png">
+					<img title="{{title}}" src="images/thumbnails/typographic-self-portrait-thumb.jpg" alt="alt" class="img-thumbnail">
+					<figcaption class="customCaption">
+					  <p class="img_name">Title</p>
+					  <p>caption</p>
+					</figcaption>
+				  </a>   
+				 </figure>
+				</section>
+			
+       			<section class="portfolio-cards row"> <!-- class="portfolio-cards" -->
+					
                 </section>
 				<div id="captionBox"></div>
 				
 				
 				<!-- id of gallery is element 2 -->
+				<!-- images is name of class structure in JSON -->
     			<script id="gallery" type="text/template"> 
 				{{#images}}
-				
-				<figure>
+				<figure class="col-sm-4">
 				  <a class="captionBoxImage" href="images/portfolio/{{src}}">
-					<img title="{{title}}" src="images/portfolio/{{src}}" alt="{{alt}}">
+					<img title="{{title}}" src="images/thumbnails/{{thumbnail}}-thumb.jpg" alt="{{alt}}" class="img-thumbnail">
 					<figcaption class="customCaption">
 					  <p class="img_name">{{title}}</p>
 					  <p>{{caption}}</p>
 					</figcaption>
-				  </a>         
-				</figure>
+				  </a>   
+				 </figure>
 				
 				{{/images}}
 
 
 			</script>
 
-       		</div>
        		
        	</div>	
        	
@@ -114,9 +124,6 @@
 	
 	
 	
-	<!-- Old Version of jQuery-->
-	
-<!--	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>-->
 	<!-- Get Mustache -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
 	<!-- Plugin JS -->
@@ -138,14 +145,20 @@
             }); // ends getJSON using jQuery
         }); // ends function
 		 
-		 $( document ).ready(function() { // use CaptionBox plugin
+		  $( document ).ready(function() {
+
         $('#captionBox').CaptionBox({
+
               disableRightClick: true,
+
 			  alterUrlFlag: false
+
         });
-    });  
+
+    });    
 
     </script>
+
 
     </body>
 </html>
