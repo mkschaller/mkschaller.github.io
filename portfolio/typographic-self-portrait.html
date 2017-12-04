@@ -4,11 +4,11 @@
   <title>Portfolio of McKenna Schaller</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="icon" type="image/png" href="../images/logo.png" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/captionbox.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="../css/captionbox.css">
+  <link rel="stylesheet" href="../css/styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
@@ -25,20 +25,20 @@
 <body><div id="wrap">
     <nav class="navbar navbar-expand-sm bg-faded  fixed-top">
     <div class="container">
-	  <a class="navbar-brand" href="index.html"><img src="images/text-logo.png" alt="PC"></a>
+	  <a class="navbar-brand" href="../index.html"><img src="../images/text-logo.png" alt="PC"></a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 		<span class=""><span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span></span>
 	  </button>
 	  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
 		<ul class="navbar-nav nav-justified">
 		  <li class="nav-item p-2">
-			<a class="nav-link" href="resume.html">Resume</a>
+			<a class="nav-link" href="../resume.html">Resume</a>
 		  </li>
 		  <li class="nav-item p-2">
-			<a class="nav-link active" href="portfolio.html">Portfolio</a>
+			<a class="nav-link active" href="../portfolio.html">Portfolio</a>
 		  </li>
 		  <li class="nav-item p-2">
-			<a class="nav-link" href="contact.html">Contact</a>
+			<a class="nav-link" href="../contact.html">Contact</a>
 		  </li>    
 		</ul>
 	  </div>  
@@ -50,33 +50,37 @@
  	</header>
     <main class="container m-5 mx-auto">
 		<h1>Portfolio</h1>
-				
-       			<section class="portfolio-cards row">
-					
-                </section>
+		<div class="row">
+		<div class="col-sm-6 col-md-8">
+			<h2>Typographic Self Portrait</h2>
+			<p class="small">
+				<strong>Category:</strong> Graphic Design &nbsp;&#8226;&nbsp; <strong>Created:</strong> Fall 2016
+			</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora alias laudantium sapiente, obcaecati nostrum eveniet, officiis, autem atque veritatis vel soluta non! Possimus impedit sapiente consectetur blanditiis odit. Provident, autem.</p>
+		</div>
+			
+			<div class="col-sm-6 col-md-4">
+				<figure>
+				  <a class="captionBoxImage" href="../images/projects/schaller-typography-self-portrait.jpg">
+					<img title="Typographic Self Portrait" src="../images/thumbnails/typographic-self-portrait-thumb.jpg" alt="typographic self portrait"/>
+					<figcaption class="customCaption">
+						<h2>Typographic Self Portrait</h2>
+					</figcaption>
+				  </a>            
+        		</figure>
+				<div id="captionBox"></div>
 
-    			<script id="gallery" type="text/template"> 
-				{{#images}}
+			
+			</div>
+		</div>
 				
-				<figure class="col-sm-4 col-md-3">
-				  <a href="portfolio/{{thumbnail}}.html">
-					<img title="{{title}}" src="images/thumbnails/{{thumbnail}}-thumb.jpg" alt="{{alt}}" class="img-fluid mx-auto card-shadow">
-				  </a>   
-				 </figure>
-				 
-				 
-				
-				{{/images}}
-
-			</script>
 
        		
-<!--       	</section>	-->
        	
    </main>
     <div class="jumbotron before-footer-widget">
   			<h2 class="text-center">Interested in working with me?</h2>
-  			<p class="text-center"><a href="contact.html"><button class="btn before-footer-button m-3">Contact me!</button></a></p>
+  			<p class="text-center"><a href="../contact.html"><button class="btn before-footer-button m-3">Contact me!</button></a></p>
   		</div>
     </div>
     
@@ -100,7 +104,7 @@
    		
    		<div class="text-center container">
    		<hr>
-   			<img src="images/logo.png" alt="PC" class="m-1">
+   			<img src="../images/logo.png" alt="PC" class="m-1">
    			<p class="m-2">&copy; <span id="year"></span> McKenna Schaller</p>
    		</div>
     </footer>
@@ -110,8 +114,8 @@
 	<!-- Get Mustache -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
 	<!-- Plugin JS -->
-	<script src="js/captionbox.js"></script>
-	<script src="js/exif.js"></script>
+	<script src="../js/captionbox.js"></script>
+	<script src="../js/exif.js"></script>
 	 <script>
 
         $(function() {

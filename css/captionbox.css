@@ -93,7 +93,7 @@
 .captionBox .image{
     max-width: calc(85% - 60px);
     margin: 0 auto;
-    //height: 75vh;
+    height: 75vh;
     margin-top: 15px;
     position: relative;
 }
