@@ -163,9 +163,16 @@ a:hover, a:active {
 	border-radius: 0;
 	margin: 0;
 	margin-top: 1em;
+	padding: 15px;
+	padding-top: 25px;
 	width: 100%;
-	background: $transparent-ltgray;
+	background: url(../images/website-banner.jpg);
 	color: $white;
+}
+.jumbotron.before-footer-widget h2{
+	color: $ltgray;
+	letter-spacing: 0.025em;
+	text-shadow: $shadow-md;
 }
 
 .before-footer-button{
@@ -173,17 +180,19 @@ a:hover, a:active {
 	margin-right: 10px;
 	border-style: solid;
 	border-color: $teal;
-	background: $white;
+	background-color: $white;
 	font-weight: 700;
 	letter-spacing: 0.025em;
 	color: $teal;
 	border-radius: 5px; // match border radius of social icons
 	cursor: pointer;
+	box-shadow: $shadow-sm;
 }
 .before-footer-button:hover{
 	background: $teal;
 	color: $white;
 }
+
 /* Resume ----------------------------------------------------------------*/
 #resume h4{
 	font-weight: 600;
@@ -241,6 +250,8 @@ footer{
 footer img{
 	width: 35px;
 	height: auto;
+	margin: 10px auto;
+	display: block;
 }
 html, body {
   height: 100%;
@@ -259,12 +270,29 @@ html, body {
 	  min-height: 100%;
 	  height: auto !important;
 	  height: 100%;
-	  margin: 0 auto -450px;
-	  padding: 0 0 450px;
+	  margin: 0 auto -600px;
+	  padding: 0 0 600px;
 	}
 
 	footer {
-	  height: 450px;
+	  height: 600px;
+	}
+	img{
+		margin: auto;
+		display: block;
+	}
+}
+@media only screen and (max-width: 768px){
+	#wrap {
+	  min-height: 100%;
+	  height: auto !important;
+	  height: 100%;
+	  margin: 0 auto -350px;
+	  padding: 0 0 350px;
+	}
+
+	footer {
+	  height: 350px;
 	}
 }
 
@@ -295,7 +323,9 @@ html, body {
 	letter-spacing: 0.025em;
 	font-size: 1.1em;
 }
-
+.captionBox .exif li{
+	display: none;
+}
 //.captionBox.mobile .info{
 //	padding-top: 55px;
 //}
