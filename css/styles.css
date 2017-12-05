@@ -115,6 +115,12 @@ a:hover, a:active {
   width: 48px;
   border: 0.075em solid #039589; }
 
+.social-link {
+  padding: 3px;
+  border-radius: 5px;
+  width: 48px;
+  border: 0.075em solid #039589; }
+
 /* Widgets ----------------------------------------------------------------*/
 .jumbotron.before-footer-widget {
   border-radius: 0;
@@ -136,13 +142,12 @@ a:hover, a:active {
   margin-right: 10px;
   border-style: solid;
   border-color: #039589;
-  background-color: #fff;
+  background-color: #eeeeee;
   font-weight: 700;
   letter-spacing: 0.025em;
   color: #039589;
   border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  cursor: pointer; }
 
 .before-footer-button:hover {
   background: #039589;
@@ -264,3 +269,10 @@ html, body {
 
 .captionBox .exif li {
   display: none; }
+
+figcaption {
+  margin-top: 15px;
+  font-weight: 300;
+  color: #444;
+  text-transform: uppercase;
+  font-size: .9em; }

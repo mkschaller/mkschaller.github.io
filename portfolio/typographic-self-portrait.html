@@ -56,13 +56,14 @@
 			<p class="small">
 				<strong>Category:</strong> Graphic Design &nbsp;&#8226;&nbsp; <strong>Created:</strong> Fall 2016
 			</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora alias laudantium sapiente, obcaecati nostrum eveniet, officiis, autem atque veritatis vel soluta non! Possimus impedit sapiente consectetur blanditiis odit. Provident, autem.</p>
+			<p>What words best describe you? The imagery in this poster was created using only words that illustrate who I am and my interests. Many different fonts, warps, and gradient overlays were used to achieve depth in the contours of the face and to create the forms in Photoshop.</p>
 		</div>
 			
 			<div class="col-sm-6 col-md-4">
 				<figure>
 				  <a class="captionBoxImage" href="../images/projects/schaller-typography-self-portrait.jpg">
 					<img title="Typographic Self Portrait" src="../images/thumbnails/typographic-self-portrait-thumb.jpg" alt="typographic self portrait"/>
+					 <figcaption>View Fullscreen</figcaption>
 				  </a>            
         		</figure>
 				<div id="captionBox"></div>
@@ -75,25 +76,29 @@
        		
        	
    </main>
+	
+<!--
     <div class="jumbotron before-footer-widget">
   			<h2 class="text-center">Interested in working with me?</h2>
   			<p class="text-center"><a href="../contact.html"><button class="btn before-footer-button m-3">Contact me!</button></a></p>
-  		</div>
+  	</div>
+-->
+	
+	
     </div>
     
      <footer class="p-4">
     	<div class="row container">
-			<div class="col-md-6 col p-1">
-				<h4>Quick Biography</h4>
-				<p>Web designer with an adoration for pretty typography, cats, and lattes &#40;or anything with caffeine&#41;. </p>
+			<div class="col-md-8 p-1">
+				<h4>Interested in working with me?</h4>
+				<a href="../contact.html"><button class="btn before-footer-button m-3">Contact me!</button></a>
 			</div>
-			<div class="col-md-1"><!--Empty space--></div>
 			<div class="col-md-4 p-1">
 				<h4>Visit me online!</h4>
-				<div class="d-flex justify-content-around">
-				<a href="https://github.com/mkschaller" class="btn m-1" role="button" target="_blank"><i class="fa fa-github fa-2x social-link" aria-hidden="true"></i></a>
-				<a href="https://www.linkedin.com/in/mckenna-schaller/" class="btn m-1" role="button"  target="_blank"><i class="fa fa-linkedin-square fa-2x social-link" aria-hidden="true"></i></a>
-				<a href="mailto:mckennakschaller@gmail.com" class="btn m-1" role="button"><i class="fa fa-envelope fa-2x social-link" aria-hidden="true"></i></a>
+				<div>
+				<a href="https://github.com/mkschaller" class="btn" role="button" target="_blank"><i class="fa fa-github fa-2x social-link" aria-hidden="true"></i></a>
+				<a href="https://www.linkedin.com/in/mckenna-schaller/" class="btn" role="button"  target="_blank"><i class="fa fa-linkedin-square fa-2x social-link" aria-hidden="true"></i></a>
+				<a href="mailto:mckennakschaller@gmail.com" class="btn" role="button"><i class="fa fa-envelope fa-2x social-link" aria-hidden="true"></i></a>
 				</div>
 			</div>
 			
@@ -101,8 +106,8 @@
    		
    		<div class="text-center container">
    		<hr>
+			<p class="m-2">&copy; McKenna Schaller <span id="year"></span></p>
    			<img src="../images/logo.png" alt="PC">
-   			<p class="m-2">&copy; <span id="year"></span> McKenna Schaller</p>
    		</div>
     </footer>
 	
@@ -114,20 +119,6 @@
 	<script src="../js/captionbox.js"></script>
 	<script src="../js/exif.js"></script>
 	 <script>
-
-        $(function() {
-			
-            // JSON for plugin
-
-            $.getJSON('data.json', function(data) { // get correct file at same level
-
-                var template = $('#gallery').html(); // name of template, id of gallery is element 2
-
-                var html = Mustache.to_html(template, data);
-
-                $('.portfolio-cards').html(html); // element 1
-            }); // ends getJSON using jQuery
-        }); // ends function
 		 
 		  $( document ).ready(function() {
 
