@@ -271,16 +271,20 @@ html, body {
 	  min-height: 100%;
 	  height: auto !important;
 	  height: 100%;
-	  margin: 0 auto -600px;
-	  padding: 0 0 600px;
+	  margin: 0 auto -400px;
+	  padding: 0 0 400px;
 	}
 
 	footer {
-	  height: 600px;
+	  height: 400px;
+	  text-align: center;
 	}
 	img{
 		margin: auto;
 		display: block;
+	}
+	footer h4 {
+		text-align: center;
 	}
 }
 @media only screen and (max-width: 768px){
