@@ -314,6 +314,13 @@ html, body {
 	transition: 0.3s cubic-bezier;
 }
 
+/* Resume page ----------------------------------------------------------*/
+@media only screen and (max-width: 576px){
+	// fix display of experience on mobile
+	span.left{
+		color: $teal;
+	}
+}
 
 /* Portfolio plugin ----------------------------------------------------------*/
 .captionBox {
