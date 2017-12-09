@@ -261,9 +261,8 @@ html, body {
   span.left {
     float: left; }
 
-  p, h4 {
-    clear: both;
-    margin-top: 5px; } }
+  p, #resume h4 {
+    clear: both; } }
 /* Portfolio plugin ----------------------------------------------------------*/
 .captionBox {
   z-index: 1031; }
