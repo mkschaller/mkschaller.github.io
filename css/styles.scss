@@ -314,6 +314,17 @@ html, body {
 	transition: 0.3s cubic-bezier;
 }
 
+/* Resume page ----------------------------------------------------------*/
+@media only screen and (max-width: 576px){
+	// fix display of experience on mobile
+	span.left{
+		float: left;
+	}
+	p{
+		clear: both;
+	}
+}
+
 /* Portfolio plugin ----------------------------------------------------------*/
 .captionBox {
 	z-index: 1031;
