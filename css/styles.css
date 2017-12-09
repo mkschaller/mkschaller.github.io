@@ -223,11 +223,11 @@ html, body {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -400px;
-    padding: 0 0 400px; }
+    margin: 0 auto -450px;
+    padding: 0 0 450px; }
 
   footer {
-    height: 400px;
+    height: 450px;
     text-align: center; }
 
   img {
