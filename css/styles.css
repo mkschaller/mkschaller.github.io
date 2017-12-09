@@ -218,7 +218,7 @@ html, body {
   margin: 0 auto -200px;
   padding: 0 0 200px; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   #wrap {
     min-height: 100%;
     height: auto !important;
