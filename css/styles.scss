@@ -320,8 +320,9 @@ html, body {
 	span.left{
 		float: left;
 	}
-	p{
+	p, h4{
 		clear: both;
+		margin-top: 5px;
 	}
 }
 
