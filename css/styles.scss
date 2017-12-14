@@ -207,10 +207,11 @@ a:hover, a:active {
 }
 
 span.left {
-            float: right;
-            font-weight: inherit;
-            font-style: italic;
-        }
+    float: right;
+    font-weight: 300;
+	font-size: 0.8em;
+    font-style: italic;
+}
 
 /* Form ----------------------------------------------------------------*/
 
