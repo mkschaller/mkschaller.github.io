@@ -168,7 +168,8 @@ span.left {
   float: right;
   font-weight: 300;
   font-size: 0.8em;
-  font-style: italic; }
+  font-style: normal;
+  color: #444; }
 
 /* Form ----------------------------------------------------------------*/
 #error {
