@@ -302,7 +302,9 @@ html, body {
 		text-align: center;
 	}
 }
-
+a.btn { // fix alignment of social icons in footer for smaller space in between
+    padding-left: 0;
+}
 /* Card ---------------------------------------------------------------------*/
 .card-shadow{
 	box-shadow: $shadow-sm;
