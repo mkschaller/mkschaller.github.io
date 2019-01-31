@@ -1,0 +1,28 @@
+/* Variables --------------------------------------------------------------- */
+
+// Colors
+$ltgray: #F4F4F5;
+$gray: #333;
+$dkgray: #232323;
+$white: #fff;
+$transparent-ltgray: rgba(238,238,238, .5); // aka #eee
+$teal: #039589;
+$lime: #a5b339;
+$transparent-teal: rgba(3,149,137,.25);
+$blue: #3a6a80;
+$text: #1F2041;
+
+$nav-bkg: $ltgray;
+$footer-bkg: $ltgray;
+$button-bkg: $teal;
+$button-hover: $blue;
+
+// Shadows
+$shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$shadow-md: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$shadow-lg: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+// Fonts
+$primary-font: 'Poppins', sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
+$body-font: 'Merriweather', serif;

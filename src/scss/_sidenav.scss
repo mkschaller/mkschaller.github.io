@@ -1,0 +1,61 @@
+.sidenav {
+    background-color: rgba($blue, .95);
+    height: 100%;
+    left: 0;
+    overflow-x: hidden;
+    // padding: 25px;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+    width: 0;
+    z-index: 100;
+
+    .navbar-nav {
+        padding: 30px;
+    }
+    
+    .closenav {
+        color: darken($white, 10%);
+        display: flex;
+        justify-content: flex-end;
+
+        &:active, &:hover, &:focus {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+
+    .nav-link {
+        a {
+            font-family: $secondary-font;
+            line-height: 2;
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: darken($white, 10%);
+            letter-spacing: 0.025em;
+
+            &.active, &:hover {
+                color: $white;
+                text-decoration: none;
+                transition: all 0.3s;
+            }
+        }
+
+    }
+
+    .active a {
+        font-weight: 700;
+        color: $white;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: row;
+
+        .fa {
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+    }
+
+}

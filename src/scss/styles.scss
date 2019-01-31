@@ -1,0 +1,426 @@
+/* Imports --------------------------------------------------------------- */
+@import 'variables';
+@import 'google-fonts';
+@import 'sidenav';
+
+/* General --------------------------------------------------------------- */
+
+body {
+	color: $text;
+	font-family: $body-font;
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+section {
+	margin-top: 50px;
+}
+
+.diagonal-edge {
+	background: $ltgray;
+	margin-bottom: 75px;
+	margin-top: 0;
+	padding-top: 50px;
+	padding-bottom: 25px;
+	position: relative;
+	z-index: 1;
+
+	&:before {
+		background: inherit;
+		bottom: 0;
+		content: '';
+		display: block;
+		height: 50%;
+		left: 0;
+		position: absolute;
+		right: 0;
+		transform: skewY(-1.5deg);
+		transform-origin: 100%;
+		z-index: -1;
+	}
+}
+
+.testimonial {
+	line-height: 2;
+	
+	h3 {
+		color: $teal;
+	}
+	.testimonial-quote {
+		font-family: $body-font;
+		font-style: italic;
+	}
+}
+
+.cta {
+	max-width: 600px;
+	text-align: center;
+	
+	h2 {
+		color: $teal;
+	}
+}
+
+/* Typography --------------------------------------------------------------- */
+
+h1, h2, h3 {
+	font-family: $primary-font;
+	font-weight: 200;
+}
+
+h4 {
+	font-family: $secondary-font;
+	font-weight: 700;
+}
+
+h6 {
+	font-family: $secondary-font;
+	font-size: .8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+p, h5 {
+	color: rgba($text, .75);
+	font-family: $body-font;
+	font-size: 1rem;
+	letter-spacing: 0.01em;
+}
+
+.btn.link {
+	color: $teal;
+	font-family: $secondary-font;
+	font-size: .8rem;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+
+	&:hover {
+		color: darken($teal, 10%)
+	}
+
+	&.light {
+		color: $white;
+
+		&:hover {
+			color: darken($white, 10%);
+		}
+	}
+
+	&.btn-p-0 {
+		padding: 0;
+	}
+}
+
+.btn.btn-outlined {
+	border: 2px solid $teal;
+	border-radius: 100px;
+	font-family: $secondary-font;
+	font-size: .75rem;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+	padding: 15px 25px;
+	text-transform: uppercase;
+
+	&:hover {
+		border-color: darken($blue, 5%);
+	}
+}
+
+.btn.btn-outlined.light {
+	border-color: $white;
+
+	&:hover {
+		border-color: darken($white, 15%);
+	}
+}
+
+.blockquote {
+	border-left: 15px solid $teal;
+	color: $teal;
+	font-family: $secondary-font;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 2;
+	margin: 15px 0;
+	padding-left: 25px;
+}
+
+/* Header --------------------------------------------------------------- */
+
+.masthead {
+	background-color: $blue;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-bottom: 25px;
+	min-height: 300px;
+	padding: 25px;
+
+	.cta {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		text-align: center;
+
+	}
+
+	h1, h2 {
+		color: $white;
+		font-family: $secondary-font;
+	}
+
+	h1 {
+		font-weight: 700;
+	}
+
+	h2 {
+		font-weight: 200;
+	}
+
+	.btn.link.light {
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (min-width: 425px) { 
+	.masthead {
+		background: url(../images/banner.png) no-repeat bottom center;
+		background-size: cover;
+		min-height: 275px;
+
+		.cta {
+			margin: 15px auto;
+		}
+	}
+
+}
+
+@media only screen and (min-width: 992px) { 
+	.masthead {
+		min-height: 325px;
+
+		.cta {
+			margin: 25px auto;
+		}
+	}
+	
+}
+
+/* Portfolio Blocks --------------------------------------------------------------- */
+.portfolio {
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 25px;
+	
+	.project {
+		overflow: hidden;
+		position: relative;
+		flex: 1 100%;
+		
+		div {
+			background-color: $teal;
+			background-size: cover;
+			display: flex;
+			justify-content: center;
+			min-height: 300px;
+			padding: 15px;
+			overflow: hidden;
+			-moz-transition: all .5s;
+			-webkit-transition: all .5s;
+			transition: all .5s;
+			-moz-transform: scale(1,1);
+			-webkit-transform: scale(1,1);
+			transform: scale(1,1);
+			// http://jsfiddle.net/s3hWj/4/
+
+			&:hover, &:focus {
+				// transform: scale(1.2);
+				transition: all .5s;
+				-moz-transform: scale(1.2,1.2);
+				-webkit-transform: scale(1.2,1.2);
+				transform: scale(1.2,1.2);
+			}
+		}
+
+		a {
+			justify-self: center;
+			align-self: center;
+		}
+	}
+
+	
+}
+
+@media only screen and (min-width: 768px) { 
+	.portfolio .project {
+		flex: 1 33%;
+	}
+}
+
+/* Navigation --------------------------------------------------------------- */
+
+.navbar{
+	background: $nav-bkg;
+	box-shadow: $shadow-sm;
+}
+
+.navbar {
+	display: flex;
+	align-content: center;
+
+	.logo {
+		display: flex;
+		flex: 1 20%;
+		justify-content: center;
+
+		img{
+			width: auto;
+			max-height: 40px;
+		}
+	
+	}
+	.primary-links {
+		align-content: center;
+		display: none;
+		flex: 1 40%;
+		margin-bottom: 0; // overrite bootstrap
+
+		.nav-link a {
+			font-family: $secondary-font;
+			font-weight: 500;
+			color: rgba($text, .6);
+			letter-spacing: 0.025em;
+
+			&.active, &:hover, &:active {
+				color: $text;
+				text-decoration: none;
+				transition: all 0.3s;
+			}
+		}
+		.active a {
+			font-weight: 700;
+		}
+	}
+	
+	.secondary-links {
+		align-content: center;
+		display: none;
+		flex: 1 40%;
+		justify-content: flex-end;
+		margin-bottom: 0; // overrite bootstrap
+
+		.nav-link a {
+			font-family: $secondary-font;
+			font-weight: 400;
+			color: rgba($teal, 1);
+			letter-spacing: 0.025em;
+
+			&.active, &:hover, &:active {
+				color: darken($teal, 10%);
+				text-decoration: none;
+			}
+		}
+	}
+	
+	.opennav .fa {
+		color: $blue;
+	}
+
+	.cta-button {
+		background: $teal;
+		background: linear-gradient(to bottom, $teal, darken($teal, 5%));
+		border: 0;
+		border-radius: 50px;
+		font-size: .75rem;
+		font-weight: 700;
+		margin-top: 4px;
+		text-transform: uppercase;
+
+		&:hover {
+			cursor: pointer;
+			background: linear-gradient(to bottom, darken($teal, 5%), darken($teal, 10%));
+			transition: all 0.3s;
+		}
+	}
+} 
+
+// navigation visiblity
+@media only screen and (min-width: 992px){
+	.navbar {
+		.primary-links, .secondary-links {
+			display: inline-flex;
+		}
+		.opennav {
+			display: none;
+		}
+	}
+}
+
+/* Links --------------------------------------------------------------- */
+a {
+	color: $teal;
+	font-weight: 600;
+	letter-spacing: 0.025em;
+}
+a:hover, a:active {
+	color: $blue;
+}
+
+
+/* Footer ----------------------------------------------------------------*/
+
+footer{
+	background: $footer-bkg;
+	display: flex;
+	min-height: 300px;
+	margin-top: 50px;
+	width: 100%;
+
+	.footer-contents {
+		max-width: 600px;
+		margin: auto;
+		
+		img{
+			display: block;
+			max-height: 50px;
+			margin: 15px auto;
+		}
+
+		p {
+			margin: 1rem auto;
+		}
+
+		.footer-links {
+			display: flex;
+			margin-bottom: 0;
+			margin: auto;
+			justify-content: center;
+			padding-left: 0;
+
+			li {
+				display: inline-block;
+			}
+
+			.nav-link {
+				padding: 0;
+				
+				a {
+					font-family: $secondary-font;
+					font-weight: 400;
+					color: rgba($teal, 1);
+					letter-spacing: 0.025em;
+		
+					&.active, &:hover, &:active {
+						color: darken($teal, 10%);
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+html, body {
+  height: 100%;
+}
