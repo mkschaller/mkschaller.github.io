@@ -10,14 +10,14 @@ var del = require('del');
 var runSequence = require('run-sequence');
 
 gulp.task('sass', function() {
-    return gulp.src('docs/scss/*.scss')
+    return gulp.src('src/scss/*.scss')
         .pipe(sass().on('error', function(err) {
             console.error(err.message);
             browserSync.notify(err.message, 3000); // Display error in the browser
             this.emit('end'); // Prevent gulp from catching the error and exiting the watch process
         }))
         .pipe(sass())
-        .pipe(gulp.dest('docs/css'))
+        .pipe(gulp.dest('src/css'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -27,19 +27,19 @@ gulp.task('browserSync', function() {
     browserSync.init({
         notify: false,
         server: {
-            baseDir: 'docs'
+            baseDir: 'src'
         },
     })
 });
 
 gulp.task('copy', function() {
     return gulp.src(
-        ['docs/**/*.js',
-        'docs/**/*.{jpg,jpeg,png,svg,gif}',
-        'docs/**/*.css',
-        '!docs/**/*.scss',
-        'docs/**/*.html',
-        'docs/**/*.php'])
+        ['src/**/*.js',
+        'src/**/*.{jpg,jpeg,png,svg,gif}',
+        'src/**/*.css',
+        '!src/**/*.scss',
+        'src/**/*.html',
+        'src/**/*.php'])
         .pipe(gulp.dest('dist'))
 });
 
@@ -49,11 +49,11 @@ gulp.task('clean:dist', function() {
 
 // gulp watch functions
 gulp.task('watch', ['browserSync', 'sass'], function() {
-    gulp.watch('docs/**/*.scss', ['sass']);
-    gulp.watch('docs/**/*.{css,scss}', browserSync.reload);
-    gulp.watch('docs/**/*.html', browserSync.reload);
-    gulp.watch('docs/**/*.php', browserSync.reload);
-    gulp.watch('docs/**/*.js', browserSync.reload);
+    gulp.watch('src/**/*.scss', ['sass']);
+    gulp.watch('src/**/*.{css,scss}', browserSync.reload);
+    gulp.watch('src/**/*.html', browserSync.reload);
+    gulp.watch('src/**/*.php', browserSync.reload);
+    gulp.watch('src/**/*.js', browserSync.reload);
     // Other gulp watchers
 });
 
