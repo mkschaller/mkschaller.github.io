@@ -1040,8 +1040,8 @@ body {
   line-height: 1.6; }
 
 .container {
-  padding-right: 25px;
-  padding-left: 25px; }
+  padding-right: 35px;
+  padding-left: 35px; }
 
 section {
   margin-top: 50px; }
@@ -1124,9 +1124,9 @@ section {
   color: #039589; }
 
 .resume .resume-preview {
-  margin-bottom: -80px;
+  margin-bottom: -100px;
   margin-top: 25px;
-  max-height: 300px;
+  max-height: 325px;
   overflow: hidden;
   position: relative;
   z-index: 1; }
