@@ -12,8 +12,19 @@ body {
 	line-height: 1.6;
 }
 
+.container {
+	padding-right: 25px;
+    padding-left: 25px;
+}
+
 section {
 	margin-top: 50px;
+}
+
+.gray-section {
+	background: $ltgray;
+	margin: 50px auto;
+	padding: 75px 25px;
 }
 
 .diagonal-edge {
@@ -21,8 +32,8 @@ section {
 	margin-bottom: 75px;
 	margin-top: 0;
 	overflow: hidden;
-	padding-top: 50px;
-	padding-bottom: 25px;
+	padding: 75px 25px;
+	// padding-bottom: 25px;
 	position: relative;
 	z-index: 1;
 
@@ -52,7 +63,6 @@ section {
 	margin-bottom: 75px;
 	overflow: hidden;
 	padding-top: 50px;
-	padding-bottom: 25px;
 	position: relative;
 	z-index: 1;
 
@@ -98,6 +108,7 @@ section {
 .cta {
 	max-width: 600px;
 	text-align: center;
+	margin-bottom: 75px;
 	
 	h2 {
 		color: $teal;
@@ -107,9 +118,9 @@ section {
 .resume {
 
 	.resume-preview {
-		margin-bottom: -55px;
+		margin-bottom: -80px;
 		margin-top: 25px;
-		max-height: 250px;
+		max-height: 300px;
 		overflow: hidden;
 		position: relative;
 		z-index: 1;	
@@ -341,10 +352,11 @@ p, h5 {
 			justify-content: center;
 			min-height: 300px;
 			padding: 15px;
+			opacity: 0;
 			overflow: hidden;
-			-moz-transition: all .5s;
-			-webkit-transition: all .5s;
-			transition: all .5s;
+			-moz-transition: all 1s;
+			-webkit-transition: all .1s;
+			transition: all 1s;
 			-moz-transform: scale(1.01,1.01);
 			-webkit-transform: scale(1.01,1.01);
 			transform: scale(1.01,1.01);
